@@ -1,0 +1,6 @@
+checkmavenversion
+{
+mvn validate 
+}
+
+checkmavenversion
