@@ -24,6 +24,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: deploy application to tomcatserver
-      run: curl -v -u admin:admin -T /home/runner/work/petproject/petproject/target/spring-petclinic-4.2.war 'http://http://13.126.94.153:8080/manager/text/deploy& path=/spring-petclinic-4.2.war'
+      run: curl -v -U admin:admin -T /home/runner/work/petproject/petproject/target/spring-petclinic-4.2.war 'http://13.126.94.153:8080/manager/text/deploy&path=/spring-petclinic-4.2.war'
 
    
