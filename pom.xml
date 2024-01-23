@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-petclinic</artifactId>
-    <version>4.5.2-SNAPSHOT</version>
+    <version>4.2</version>
   <name>petclinic</name>
     <packaging>war</packaging>
 
@@ -379,7 +379,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                                <url>http://18.236.178.6:8085/manager/text</url>
+                                <url>http://65.1.147.71:8080/manager/text</url>
                     <server>apache-tomcat</server>
                       <username>admin</username>
     <password>admin</password>
@@ -459,7 +459,7 @@
 <artifactId>tomcat7-maven-plugin</artifactId> 
 <version>2.2</version> 
 <configuration> 
-<url>http://18.236.178.6:8085/manager/text</url> 
+<url>http://65.1.147.71:8080/manager/text</url> 
 <server>apache-tomcat</server> 
     <username>admin</username>
     <password>admin</password>
