@@ -1,5 +1,4 @@
 -: Hi and welcome on to this section.
-
 Now, in this section,
 
 we are gonna be looking at using Azure Boards
