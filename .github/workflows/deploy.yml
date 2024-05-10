@@ -25,7 +25,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: deploy war totomcat
       run: curl -V -U admin:admin -T /home/runner/work/petproject/petproject/target/spring-petclinic-4.2.war
-            'http://13.235.19.131:8080/manager/text/deploy? path=/spring-petclinic-4.2.war'
+            'http://13.235.19.131:8080/manager/text/deploy?path=/spring-petclinic-4.2.war'
 
 
     
