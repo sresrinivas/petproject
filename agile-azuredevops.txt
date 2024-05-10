@@ -1,0 +1,795 @@
+-: Hi and welcome on to this section.
+
+Now, in this section,
+
+we are gonna be looking at using Azure Boards
+
+as the tool within Azure DevOps.
+
+This is used basically like a project management tool.
+
+Herein, you can actually define,
+
+when it comes onto a Agile,
+
+user stories,
+
+and then you can define something known as (indistinct)
+
+that are based on the user stories.
+
+So, we are gonna see how to work with projects
+
+within Azure DevOps,
+
+and how do we start creating these work items
+
+that need to be carried out
+
+as part of the application life cycle development.
+
+So we're gonna look into detail
+
+on how do we first use the Azure Boards tool
+
+within Azure DevOps.
+=============================================================================================
+
+
+
+
+-: So, now we're gonna see how do we plan our work
+
+with the use of Azure Boards.
+
+So let's take a situation.
+
+Let's say you are working for a fictitious company,
+
+Cloud Portal Hub.
+
+Now, this company acts as the IT department
+
+for a larger organization.
+
+The organization itself probably has many more departments
+
+such as logistics, human resources, et cetera.
+
+So, these are all of the business units
+
+within the entire organization.
+
+And you work for the IT department
+
+that's part of this organization.
+
+The leadership team in let's say one of the business units,
+
+the Human Resources Business Department
+
+now wants to have an application that needs to be built.
+
+So, they approach the leadership team
+
+within your IT department
+
+telling that they want to build an application.
+
+The leadership team
+
+in the Human Resources Business Department
+
+tell that they can get all of the requirements
+
+from their users.
+
+And obviously, the leadership team
+
+from your IT department is more than happy
+
+to take on the project for creating this application.
+
+Now, when it comes on to the key focus
+
+given by the Human Resources Business Department.
+
+So, they have a primary focus on application delivery.
+
+They want the application to be delivered
+
+as fast as possible.
+
+There is also a key focus on adding features
+
+in the future for the application.
+
+And obviously, they want to have a continuous collaboration
+
+with their end users so that they get the right requirements
+
+that can be implemented within the application.
+
+So, this is now the requirement
+
+given by a business to your IT department.
+==================================================================================
+
+
+(upbeat music)
+
+-: So now your audit department is happy
+
+that they have a project that needs to be implemented,
+
+given by the business department.
+
+Now, if you're looking at the traditional approach
+
+when it comes on to implementing this project,
+
+what would normally be done is,
+
+first of all, they would get a project team in place
+
+and have a project manager that's assigned onto the project.
+
+Initially, they would have the project manager
+
+first of all, you know, get the budget approved.
+
+They would get the budget approved from the business.
+
+Then the project manager would have a high level plan.
+
+It could probably also create a business case study
+
+and then you need to hire the team
+
+and get the team in place.
+
+Once this is done,
+
+then the project manager could set up the entire plan.
+
+These initial steps
+
+of just getting the project manager on board,
+
+having a high level plan,
+
+getting all of the budgets approved,
+
+does take time.
+
+And this is just the initial step.
+
+Once the high level plan is in place
+
+and once the team is formulated,
+
+you might have the business analyst,
+
+that could be part of the team,
+
+that would set up meetings, continuous meetings,
+
+with the end users.
+
+First in the traditional work-to-flow model.
+
+After the planning phase, you have the requirements phase.
+
+In the requirements phase,
+
+I said you'll have the analyst
+
+who will set up meetings with the end users,
+
+just to gather the requirements.
+
+Gathering the requirements could take maybe two weeks,
+
+it could take a month,
+
+depending upon the complexity of the requirement itself.
+
+Next, once you have the requirements in place,
+
+you then have the design team
+
+that could design the application.
+
+They could design the different screens for the application,
+
+design the data store.
+
+Where is the data going to be stored?
+
+How is data gonna be stored?
+
+Designing the high level application modules.
+
+And again, this could take time.
+
+The developers could start with the coding phase,
+
+testing the application.
+
+Again, all of this could take months.
+
+And then finally you'll have your software in place.
+
+But are we meeting the first requirement
+
+of the business department,
+
+wherein they're telling us
+
+to focus on delivery, application delivery?
+
+As per the traditional approach,
+
+we have everything in place
+
+but we're not focusing on quick delivery of the application.
+
+Now let's look at our new approach,
+
+wherein we are trying to deliver our software
+
+
+
+
+in a much more agile approach.
+==========================================================================
+
+
+(upbeat rhythmic music)
+
+-: (instructor) So another way
+
+in which we can implement this entire process
+
+is we could use the Agile Methodology.
+
+You could look at using the scrum process
+
+which is based on the Agile Methodology.
+
+Here you develop a scrum team,
+
+which is a small group of people
+
+focused on achieving an objective.
+
+So you'll have scrum teams in place
+
+that will go ahead
+
+and fulfill requirements given by the users.
+
+Here the team would actually
+
+gather requirements from the users,
+
+but not all at once.
+
+Yes, they would have a meeting,
+
+gather requirements from the users.
+
+These will be taken as probably user stories.
+
+What do the users actually want as part of the application?
+
+And this is gonna be a continuous process.
+
+It's not that all the requirements are gonna be gathered
+
+from the users right up right front.
+
+Yes, the key requirements could be taken,
+
+but then after that,
+
+once you have some basic requirements in place
+
+it's time to get to work.
+
+Then you could have these user stories translated
+
+into items that need to be accomplished
+
+as part of a product backlog.
+
+So you have all the items
+
+in the product backlog that needs to be implemented
+
+for the application.
+
+You then start taking the items from the product backlog
+
+and put it into multiple sprints
+
+as part of a sprint backlog.
+
+You will have multiple sprints
+
+that will be used for implementing the application itself.
+
+And on a continual basis,
+
+you'll go ahead and check the status of your sprints.
+
+Now obviously for doing all of this, we need a software
+
+and that's what we are gonna be looking in the next chapter.
+
+We're gonna see how can use Azure Boards
+
+when it comes onto the entire planning process.
+
+=======================================================================
+
+(upbeat music)
+
+-: Right, so earlier on
+
+where did we leave off from?
+
+We had signed into Azure DevOps.
+
+We had create a sample project known as Dev project.
+
+You can actually create multiple projects
+
+within something known as an organization.
+
+Within Azure DevOps,
+
+when we signed up for Azure DevOps, it would've created
+
+for us something known as an organization
+
+and within the organization it would've created a project.
+
+If I just
+
+reduce the zoom here
+
+we have our project, that's Dev project.
+
+This is within our organization.
+
+So I said, you have a project that has been placed
+
+in an organization.
+
+If you wanna go onto the organization itself, click on it.
+
+You will see all of the projects here.
+
+For the organization,
+
+you have something known as organization settings.
+
+We'd be going through the relevant settings
+
+in the subsequent chapters.
+
+If I go back onto my organization,
+
+I can go onto my project.
+
+The project itself also has project settings,
+
+you can go onto it.
+
+And you'll see settings that are relevant
+
+onto the project itself.
+
+Going back onto my project,
+
+here we have some quick links
+
+onto the various functionalities that is available
+
+within Azure DevOps.
+
+First, let me go onto Boards.
+
+Here is where we can start planning our work items.
+
+So for example, let's say you want to create a task
+
+or you want to create a user story.
+
+You would create something known
+
+as a work item within a project, within your organization.
+
+If I choose the option of creating a new work item,
+
+I can see that I can create a work item of an Epic,
+
+an issue and a task.
+
+But I can't create something known as a user story.
+
+Now why is this the case?
+
+This is actually based on the default work process model
+
+that is chosen for your project,
+
+when you create within the organization.
+
+It shows the basic process
+
+and based on the basic process
+
+these are the only work items that you have.
+
+So let me go back onto my organization.
+
+Let me create a new project.
+
+I'll give project name of Agile project.
+
+Let me scroll up, this is gonna be private.
+
+If you now go on to advance,
+
+here in the work item process,
+
+there are different options in place.
+
+By default, it is taking basic
+
+and because it is taking basic,
+
+that's why we could only create something
+
+known as Epics, or we could create issues
+
+but we can't create user stories.
+
+For this I'm gonna choose the work item process as Agile
+
+and let me hit on create.
+
+We can create multiple projects within an organization.
+
+Now that we have our project in place.
+
+If I go onto Boards, if I choose a new work item
+
+we have much more options in place.
+
+And here we have the ability to also create a user story.
+
+So initially, if you don't see the option
+
+of creating a user story as a work item,
+
+it is because of the underlying work item process
+
+that has been chosen for your underlying project.
+
+So when looking at our project,
+
+this actually provides a place
+
+for storing the various work items
+
+and also your source code.
+
+This is something that we are gonna look
+
+at in these subsequent section.
+
+When you create a project,
+
+a team of the same name has a project is also created.
+
+In subsequent chapters, we are going to look
+
+at group, security groups that are available
+
+in a Azure DevOps and permissions.
+
+And then we have the organization.
+
+The organization contains a group of related projects.
+
+For example, you could have an organization
+
+for each business unit that you have
+
+within your organization itself
+
+and then that organization can have multiple projects.
+
+Here, I'm just showing a snippet
+
+from the Microsoft documentation, which has information
+
+about the free tier services that are allowed
+
+for each organization that you create.
+
+Here we are currently working with Azure Boards
+
+wherein we get work item tracking
+
+and something known as Kanban Boards as well.
+
+So in this chapter, just want to get started
+
+by creating the right type of project
+
+so that we can start creating user stories.
+=========================================================================================
+(upbeat bright music)
+
+Instructor: So in the prior chapter,
+
+we had gone ahead and create another Azure DevOps project.
+
+Now within the project,
+
+let's go ahead and create some enormous user stories.
+
+Let's say that the Business Department of Human Resources
+
+wants to create an application wherein different departments
+
+within the organization could actually have
+
+different job postings,
+
+and then people either within the organization
+
+or external users could go ahead and apply to the jobs
+
+within the application.
+
+The users have given their initial user stories here.
+
+So just giving some very simple examples.
+
+Let's say the user stories are has each department admin
+
+must be able to add a job posting.
+
+There should be an inbuilt workflow for the job posting.
+
+And once job posting is published,
+
+no more edit should be possible on the job posting itself.
+
+So these are all requirements that are given
+
+from the end user's perspective.
+
+You can actually combine these user stories
+
+into something known as an Epic.
+
+The Epic actually is just a larger body of work
+
+that can be broken down into tasks, small number of tasks,
+
+which in turn are user stories.
+
+So here what I'll do is within our Agile project,
+
+I'll create a new work item.
+
+I'll choose Epic.
+
+When you create a new work item,
+
+you're gonna get a screen wherein you can add
+
+a lot of information about this work item.
+
+You can see that this is being created as a new Epic.
+
+We have to enter a title for the Epic,
+
+we can enter a description, we have different fields
+
+for this particular work item
+
+such as what is the area it is part of?
+
+So it's currently part of this project.
+
+What is a state?
+
+It is a new work item.
+
+We have other things that is priority,
+
+risk, effort, et cetera.
+
+Let me go ahead and just add a simple title
+
+and the description, and I can click on safe.
+
+Now it has given me kind of an index number.
+
+It's saying this is Epic 11, and 11 is the index number
+
+for this work item.
+
+When you are starting out fresh
+
+within your Azure DevOps account,
+
+your Azure DevOps organization, it might start from one,
+
+the number one when it comes on an index for the work item.
+
+Since I am creating this course,
+
+I am doing research and development
+
+on how do we work with projects,
+
+how do we work with the different parts of Azure DevOps?
+
+Obviously, I'll be creating
+
+other work items in the background.
+
+That's why the index number is a little bit different
+
+from your index number.
+
+So I said your index number might start from one.
+
+Mine is starting from wherever I left off
+
+based on my research and development
+
+when it comes on to working with Azure Boards.
+
+So we have our Epic in place.
+
+Let me go back onto the work items.
+
+You can see the Epic being shown here.
+
+It's kind of a short form of the work item.
+
+Let me create a new work item.
+
+Let me this time create a user story.
+
+So I'm gonna say each department admin
+
+must be able to add a job posting.
+
+So let me enter the title, and enter the description,
+
+and click on save.
+
+If I go back onto the work items,
+
+you can see I have both of my work items in place.
+
+One is an Epic, and the other is a user story.
+
+Now I said the Epic is kind of a larger body of work
+
+that actually encapsulates the user stories.
+
+Hence, this work item of the user story
+
+can actually be a child of this Epic.
+
+Whatever user stories we are adding
+
+should come as children of this particular Epic
+
+because all of them actually belong onto this Epic itself.
+
+So how can we actually accomplish this within Azure Boards?
+
+Well, we could go onto either the Epic,
+
+or we could go onto the real story.
+
+Let me go onto the Epic.
+
+If I scroll down in related work,
+
+I can add a link onto an existing item.
+
+Here in the link type,
+
+I'll say that the item is a child item.
+
+I can choose my user story.
+
+So now the user story is going to be
+
+a child item of the Epic.
+
+This helps us subtract all of the user stories
+
+that are part of this particular Epic.
+
+Let me go ahead and hit on okay.
+
+Let me go ahead and then click on save.
+
+Now when I go onto the Epic,
+
+I can see all of the user stories
+
+that are actually part of this Epic.
+
+Let me go back onto work items.
+
+Let me create the other user stories.
+
+(mouse clicking)
+
+(keyboard clacking)
+
+Place it here, place the description, and here itself
+
+I can again add a link onto an existing item.
+
+This time I'll choose a parent, and I'll choose my Epic
+
+because now I am saying that the Epic
+
+is a parent of this user story.
+
+I'll hit on okay, click on save,
+
+I'll create my last user story.
+
+Go back onto work items, I'll create a new user story.
+
+I can add the title, add the description, scroll down,
+
+add the link onto an existing item, choose the Epic,
+
+hit on okay, and hit on save.
+
+If I go back onto my work items,
+
+we now have all of our work items in place.
+
+So this chapter wanna start off
+
+with first how can we add our Epic,
+
+and how do we add our user stories
+
+as work items onto Azure Boards.
+
+information alert
+Schedule learning time
+Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+About this course
+Pass your AZ-400 DevOps Exam
+========================================================================
+information alert
+Schedule learning time
+Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+About this course
+
+=========================================================================
+information alert
+Schedule learning time
+Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+About this course
